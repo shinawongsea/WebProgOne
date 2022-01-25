@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background: #e3eaff;
+	font-family: 'Nunito Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	font-family: 'Questrial', sans-serif;
+	font-family: 'Shippori Antique', sans-serif;
+}
+
+h2, h3{
+	color: #414754;
+}
+
+#wholepage{
+	
+	width: 1024px;
+	margin: 0 auto;
+}
+header{
+	text-align: center;
+	padding-bottom: 10px;
+	
+
+}
+header, footer {
+	
+	display: grid;
+	grid-template-columns: auto;
+	height: 100px;
+	background-color: #FCBB9F;
+	border-radius: 25px;
+	
+	
+}
+
+.footercolumn{
+	padding: 15px;
+	padding-top: 5px;
+	text-align: center;
+  	
+}
+
+.intro{
+	
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-column-gap: 10px;
+	padding-top: 10px;
+
+	
+}
+.intro article{
+	height: 275px;
+	border-radius: 25px;
+	padding: 40px;
+	padding-bottom: 55px;
+	background-color: #c0e8f7;
+	
+}
+
+.intro article p{
+	color: #414754;
+
+}
+
+.intro aside {
+	height: 275px;
+	border-radius: 25px;
+	padding: 40px;
+	padding-top: 30px;
+	padding-bottom: 62px;
+	background-color: #96BDC4;
+
+}	
+
+.intro aside img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	height: 310px;
+	width: 235px;
+	border-radius: 25px;
+}
+
+.assignments {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 10px;
+	margin-top: 10px;
+}
+	
+
+.assignments section{
+	height: 100px;
+	background-color: #FEE7E6;
+	border-radius: 25px;
+	padding: 7px;
+	text-align: center;
+	position: relative;
+	
+}
+
+.assignments section p{
+	color: #414754;
+	font-size: 14px;
+
+}
+
+a:hover{
+	background-color: white;
+}
+
+

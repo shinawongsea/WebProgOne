@@ -19,7 +19,7 @@ header, footer {
 	height: 100px;
 	background-color: #DAE3E6;
 	border-radius: 25px;
-	 border: 2px solid #DAE3E6;
+	
 	
 }
 
@@ -61,9 +61,8 @@ header, footer {
 
 .assignments section{
 	height: 100px;
-	background-color: #FEE7E6;
+	background-color: #FDD4C1;
 	border-radius: 25px;
-	border: 2px solid #6E6D6E;
 	text-align: center;
 	position: relative;
 	
