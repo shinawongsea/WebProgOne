@@ -34,10 +34,7 @@ header{
 	
 }
 
-.adjust-line-height {
-	
-	line-height: 0.25;
-}
+
 
 footer {
 	
@@ -132,7 +129,7 @@ padding-left: 100px;
 
 .assignments section:hover{
 	background-color: #FBA99C;
-}
+}/*update section to button so entire box is clickable*/
 
 
 .assignments section p{
@@ -143,7 +140,7 @@ padding-left: 100px;
 
 a:hover{
 	background-color: white;
-}
+}/*might change color at some point*/
 
 
 
