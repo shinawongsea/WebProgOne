@@ -128,7 +128,7 @@ padding-left: 100px;
 }
 
 .assignments section:hover{
-	background-color: #FB4570;
+	background-color: #ffaebb;
 }/*update section to button so entire box is clickable*/
 
 
@@ -139,7 +139,7 @@ padding-left: 100px;
 }
 
 a:hover{
-	background-color: white;
+	background-color: #e66f82;
 }/*might change color at some point*/
 
 
