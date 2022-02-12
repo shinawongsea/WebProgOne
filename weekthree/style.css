@@ -1,0 +1,692 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* theme colors
+
+	dark but not black: #726868
+	the heavy pink: #E66F83
+	lighter pink: #FFAEBC
+	soft yellow: #FFF8AE
+	and white
+*/
+
+
+html {
+	box-sizing: border-box;
+}
+body{
+	background: white; /*solid background*/
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+/*the first set of CSS rules applies to the laptop/desktop displays*/
+@media screen and (min-width:1024px){
+
+header, footer {/*houses logo and header nav*/
+	
+	display: grid;
+	grid-template-columns: auto;
+	border-radius: 25px;
+	background-color: #E66F83; 
+	height: 200px;
+	
+}
+
+#logo {
+
+	width: 200px;
+	height: 200px;
+	position: relative;
+	left: 50px;
+	background-image: url("images/skits_logo.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+
+}
+
+.hero-portrait{
+	display: none;
+}
+
+#hero-landscape{
+	display: none;
+}
+
+nav {
+	float: right;
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	
+	
+}
+
+/*padding and margin below must match to prevent elements from shifting when cursor hovers*/
+nav a {
+	text-decoration: none;
+	padding:10px 20px;
+	margin: 50px;
+	color:#FFF8AE;
+
+}
+nav a:hover {
+	text-decoration: none;
+	padding:10px 20px;
+	margin: 50px;
+	border-radius: 25px;
+	background-color: #FFAEBC;
+	color: white;
+	
+}
+
+
+.hero img {
+	max-width: 100%;
+}
+
+.productinfo1-portrait{
+	display: none;
+}
+
+#productinfo1-portrait-image {
+	display: none;
+}
+
+.productinfo2-portrait{
+	display: none;
+}
+
+#productinfo2-portrait-image{
+	display: none;
+}
+
+.productinfo1{/*equal columns*/
+	
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	grid-template-columns: minmax (0, 2fr); 
+	grid-column-gap: 10px;
+	padding-bottom: 20px;
+	
+}
+
+.productinfo1 article{ /*text column*/
+	height: 350px;
+	background-color: #FFF8AE;
+	border-radius: 25px;
+	color: #726868;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	
+}
+
+.productinfo1 article h3 {
+	font-size: 40px;
+	letter-spacing: 0.1em;
+}
+
+.productinfo1 article p{
+	font-size: 1.5em;
+	
+}
+
+.productinfo1 aside {/*image column*/
+	height: 350px;
+	background-image: url("images/image2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: right;
+	
+	
+}
+
+
+.productinfo2{/*equal columns*/
+	
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	grid-template-columns: minmax (0, 2fr); 
+	grid-column-gap: 10px;
+	padding-bottom: 20px;
+
+	
+}
+.productinfo2 article{
+	height: 350px;
+	background-color: #FFAEBC;
+	border-radius: 25px;
+	color: #726868;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	
+}
+
+.productinfo2 article h3 {
+	font-size: 40px;
+	letter-spacing: 0.1em;
+	text-align: right;
+	
+}
+
+.productinfo2 article p{
+	font-size: 1.5em;
+	text-align: right;
+	
+
+}
+
+.productinfo2 aside {
+	height: 350px;
+	background-image: url("images/image3.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: right;
+	
+}
+
+
+
+
+/*icons courtesy of https://icons8.com/*/
+/*footer format based on Jose Ariola's example */
+
+	.section-content-wrap {
+					max-width: 1200px;
+					min-height: 50px;
+					margin: auto;
+	}
+	.three-column {
+					display: grid;
+					grid-template-columns: repeat(3, 1fr);
+	}
+	.three-column div {
+					text-align: center;
+					padding: 10px;
+	}
+	.three-column div a img {
+					display: none;
+	}
+	#facebook, #twitter, #feedback {
+					text-decoration: none;
+					display: inline-block;
+					padding: 10px;
+					color: #FFF8AE;
+	}
+	p {
+					display: inline-block;
+	}
+	#facebook p {
+					padding-top: 70px;
+					background-image: url("images/facebook-icon.png");
+					background-repeat: no-repeat;
+					background-position: center top;
+					background-size: 60px;
+				}
+				#twitter p {
+					padding-top: 70px;
+					background-image: url("images/twitter-icon.png");
+					background-repeat: no-repeat;
+					background-position: center top;
+					background-size: 60px;
+				}
+				#feedback p {
+					padding:0 10px;
+					padding-top: 70px;
+					background-image: url("images/comments-icon.png");
+					background-repeat: no-repeat;
+					background-position: center top;
+					background-size: 60px;
+				}
+			}
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+/*Responsive Design Elements*/
+
+/*mobile device portrait mode*/
+@media screen and (max-width:700px){
+	
+	header, footer {/*houses logo and header nav*/
+	
+		display: grid;
+		grid-template-columns: auto;
+		border-radius: 25px;
+		background-color: #E66F83; 
+		height: 400px;
+		
+	}
+	
+	#logo {
+	
+		width: 200px;
+		height: 200px;
+		position: relative;
+        left: 0;
+        margin: auto;
+		background-image: url("images/skits_logo.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center;
+
+
+	}
+		
+
+		nav {
+			max-width: 300px;
+			float: none;
+			position: absolute;
+			top: 30%;
+			left: 50%;
+			margin-left: -100px;
+		}
+		nav a {
+			text-align: center;
+			width: 200px;
+			display: block;
+			padding: 5px;
+			color:#FFF8AE;
+
+		}
+
+		nav a:hover {
+			text-decoration: none;
+			padding:10px 20px;
+			margin: 50px;
+			border-radius: 25px;
+			background-color: #FFAEBC;
+			color: white;
+	
+		}
+
+		.hero{
+			display: none;
+		}
+
+		#hero-landscape{
+			display: none;
+		}
+
+		.hero-portrait img {
+			max-width: 700px;
+		}
+		
+
+		#heroimagehr{
+			display: none;
+		}
+
+		.productinfo1{
+	
+			display: none;
+		}
+
+		.productinfo2{
+			display: none;
+		}
+	
+
+		.productinfo1-portrait{
+				max-width: 700px;
+				height: auto;
+				background-color: #FFF8AE;
+				border-radius: 25px;
+				color: #726868;
+				padding-left: 30px;
+				text-align: center;
+				
+			}
+			
+			.productinfo1-portrait article h3 {
+				font-size: 40px;
+				letter-spacing: 0.1em;
+				padding-top: 7px;
+			}
+			
+			.productinfo1-portrait article p{
+				font-size: 24px;
+				padding-right: 30px;
+			}
+
+			#productinfo1-portrait-image img{
+				max-width: 700px;
+			}
+	
+			.productinfo2-portrait{
+				height: auto;
+				background-color: #FFAEBC;
+				border-radius: 25px;
+				color: #726868;
+				padding-left: 30px;
+				text-align: center;
+				
+			}
+			
+			.productinfo2-portrait article h3 {
+				font-size: 40px;
+				letter-spacing: 0.1em;
+				padding-top: 7px;
+			}
+			
+			.productinfo2-portrait article p{
+				font-size: 24px;
+				padding-right: 30px;
+			}
+
+			#productinfo2-portrait-image img{
+				max-width: 700px;
+			}
+				
+		
+				/*icons courtesy of https://icons8.com/*/
+	/*footer format based on Jose Ariola's example */
+	
+	.section-content-wrap {
+		max-width: 1200px;
+		min-height: 50px;
+		margin: auto;
+	}
+	.three-column {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.three-column div {
+		text-align: center;
+		padding: 10px;
+	}
+	.three-column div a img {
+		display: none;
+	}
+	#facebook, #twitter, #feedback {
+		text-decoration: none;
+		display: inline-block;
+		padding: 10px;
+		color: #FFF8AE;
+	}
+	p {
+		display: inline-block;
+	}
+	#facebook p {
+		padding-top: 70px;
+		background-image: url("images/facebook-icon.png");
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-size: 60px;
+	}
+	#twitter p {
+		padding-top: 70px;
+		background-image: url("images/twitter-icon.png");
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-size: 60px;
+	}
+	#feedback p {
+		padding:0 10px;
+		padding-top: 70px;
+		background-image: url("images/comments-icon.png");
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-size: 60px;
+	}
+		
+}
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+/*mobile device landscape mode*/
+@media (min-width: 700px) and (max-width: 1024px){
+	
+	header, footer {/*houses logo and header nav*/
+	
+		display: grid;
+		grid-template-columns: auto;
+		border-radius: 25px;
+		background-color: #E66F83; 
+		height: 200px;
+		
+	}
+	
+	#logo {
+	
+		width: 200px;
+		height: 200px;
+		position: relative;
+		left: 50px;
+		background-image: url("images/skits_logo.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center;
+	
+	}
+	
+
+	.hero {
+		display: none;
+	}
+	
+	.hero-portrait{
+		display: none;
+	}
+
+	#hero-landscape {
+		min-width: 700px;
+		max-width: 1023px;
+	}
+
+	#hero-landscape img{
+		width: 100%;
+		
+	}
+	
+	nav {
+		float: right;
+		position: absolute;
+		top: 15%;
+		left: 30%;
+		
+		
+	}
+	
+	/*padding and margin below must match to prevent elements from shifting when cursor hovers*/
+	nav a {
+		text-decoration: none;
+		padding:10px 20px;
+		margin: 50px;
+		color:#FFF8AE;
+	
+	}
+	nav a:hover {
+		text-decoration: none;
+		padding:10px 20px;
+		margin: 50px;
+		border-radius: 25px;
+		background-color: #FFAEBC;
+		color: white;
+		
+	}
+	
+	.productinfo1-portrait{
+		display: none;
+	}
+	
+	#productinfo1-portrait-image {
+		display: none;
+	}
+	
+	.productinfo2-portrait{
+		display: none;
+	}
+	
+	#productinfo2-portrait-image{
+		display: none;
+	}
+	
+	
+	.productinfo1{/*equal columns*/
+		
+		display: grid;
+		grid-template-columns: 2fr 2fr;
+		grid-column-gap: 10px;
+		padding-bottom: 20px;
+		min-width: 700px;
+		max-width: 1023px;
+	}
+	
+	.productinfo1 article{ /*text column*/
+		height: 350px;
+		background-color: #FFF8AE;
+		border-radius: 25px;
+		color: #726868;
+		padding-left: 30px;
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+		
+		
+	}
+	
+	.productinfo1 article h3 {
+		font-size: 40px;
+		letter-spacing: 0.1em;
+		text-align: center;
+	}
+	
+	.productinfo1 article p{
+		font-size: 1em;
+		padding-right: 30px;
+		
+	}
+	
+	.productinfo1 aside {/*image column*/
+		height: 350px;
+		background-image: url("images/image2.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: right;
+		
+		
+	}
+	
+	
+	.productinfo2{/*equal columns*/
+		
+		display: grid;
+		grid-template-columns: 2fr 2fr;
+		grid-column-gap: 10px;
+		padding-bottom: 20px;
+	
+		
+	}
+	.productinfo2 article{
+		height: 350px;
+		background-color: #FFAEBC;
+		border-radius: 25px;
+		color: #726868;
+		padding-left: 30px;
+		
+	}
+	
+	.productinfo2 article h3 {
+		font-size: 40px;
+		letter-spacing: 0.1em;
+		text-align: center;
+		padding-right: 30px;
+	}
+	
+	.productinfo2 article p{
+		font-size: 1em;
+		text-align: left;
+		padding-right: 30px;
+	
+	}
+	
+	.productinfo2 aside {
+		height: 350px;
+		background-image: url("images/image3.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: right;
+		
+		
+	}
+	
+	
+	/*icons courtesy of https://icons8.com/*/
+	/*footer format based on Jose Ariola's example */
+	
+		.section-content-wrap {
+						max-width: 1200px;
+						min-height: 50px;
+						margin: auto;
+		}
+		.three-column {
+						display: grid;
+						grid-template-columns: repeat(3, 1fr);
+		}
+		.three-column div {
+						text-align: center;
+						padding: 10px;
+		}
+		.three-column div a img {
+						display: none;
+		}
+		#facebook, #twitter, #feedback {
+						text-decoration: none;
+						display: inline-block;
+						padding: 10px;
+						color: #FFF8AE;
+		}
+		p {
+						display: inline-block;
+		}
+		#facebook p {
+						padding-top: 70px;
+						background-image: url("images/facebook-icon.png");
+						background-repeat: no-repeat;
+						background-position: center top;
+						background-size: 60px;
+					}
+					#twitter p {
+						padding-top: 70px;
+						background-image: url("images/twitter-icon.png");
+						background-repeat: no-repeat;
+						background-position: center top;
+						background-size: 60px;
+					}
+					#feedback p {
+						padding:0 10px;
+						padding-top: 70px;
+						background-image: url("images/comments-icon.png");
+						background-repeat: no-repeat;
+						background-position: center top;
+						background-size: 60px;
+					}
+				}	
+
+			
