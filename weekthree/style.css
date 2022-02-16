@@ -30,6 +30,7 @@ header, footer {/*houses logo and header nav*/
 	border-radius: 25px;
 	background-color: #E66F83; 
 	height: 200px;
+	width: auto;
 	
 }
 
@@ -268,6 +269,7 @@ nav a:hover {
 		border-radius: 25px;
 		background-color: #E66F83; 
 		height: 400px;
+		width: auto;
 		
 	}
 	
@@ -469,6 +471,7 @@ nav a:hover {
 		border-radius: 25px;
 		background-color: #E66F83; 
 		height: 200px;
+		width: auto;
 		
 	}
 	
