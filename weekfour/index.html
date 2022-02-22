@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Simple Java</title>
+      <link href="style.css" rel="stylesheet" type="text/css"> 
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script>
+
+            /*
+            This is a function to allow the user to chooses the color theme for the webpage.
+            */
+            function backgroundColorChange() {
+
+                /*  declaration of a variable to hold a number,  
+                 variable assignment and then an if to make a decision 
+                 to writing to the web page
+                 */
+                var colorChoiceVar; 
+
+                /*
+                Variable assignments listed below to define each one.
+                */
+                colorChoiceVar = Number(prompt("Input 44 to change the background."));
+
+                /*Begin boolean phrases*/
+
+              if (colorChoiceVar == 44)
+                {
+                /* It was 44, so this boolean is true. We execute this code to change the background image. */
+                alert("Here we go!")
+                document.body.style.backgroundImage = "url('images/pastel1.jpeg')";
+                }
+
+              else
+                {
+                /* It was NOT 999, so the booleans are false. We execute this other code. */
+                alert("Are you sure you don't want to change the background?")
+                }
+            }
+            </script>
+
+
+
+    </head>
+    
+<body>
+
+    <div id="wrapper">
+    
+    <header>
+        <!-- Here is a button with an event handler to call the function backgroundColorChange -->
+        <button type="button" onclick="backgroundColorChange()">Click here to change the background color</button>
+    </header>
+    
+    <div class="hero"></div>
+      
+  <!--row with one big box and one small box -->
+      <div class="grid1">
+        <article></article>
+        
+        <aside></aside>
+      
+      
+      </div><!--closes grid1-->
+    
+    
+    <footer></footer>
+      
+    </div><!-- closes wrapper -->
+
+
+</body>
+</html>
