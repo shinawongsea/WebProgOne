@@ -7,7 +7,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        <script>
+        <script type="text/javascript">
 
             /*
             This is a function to allow the user to chooses the background color for the webpage.
@@ -18,26 +18,36 @@
                  variable assignment and then an if to make a decision 
                  to writing to the web page
                  */
-                var colorChoiceVar; 
+                var colorChoiceVar, variable_2, variable_3, header;
 
                 /*
                 Variable assignments listed below to define each one.
                 */
-                colorChoiceVar = Number(prompt("Input 44 to change the background."));
+                colorChoiceVar = Number(prompt("Input 22 to change the webpage and make text appear."));
+
+                variable_2 = 22;
+
+                variable_3 = colorChoiceVar + variable_2;
+
+                /*Avoid document.write. Need text to display after function is completed. The innerHTML property sets or returns the HTML content of an element.*/
+                message = document.getElementById("message").innerHTML;
+
 
                 /*Begin boolean phrases*/
 
-              if (colorChoiceVar == 44)
+              if (variable_3 == 44)
                 {
                 /* It was 44, so this boolean is true. We execute this code to change the background image. */
                 alert("Here we go!")
                 document.body.style.backgroundImage = "url('images/pastel1.jpeg')";
+                document.getElementById("message").innerHTML = "variable_2 is " + variable_2 + "<br>It was true!<hr><h3> variable_3 is " + variable_3 +"";
+               
                 }
 
               else
                 {
                 /* It was NOT 44, so the boolean is false. We execute this other code. */
-                alert("Are you sure you don't want to change the background?")
+                alert("Please refresh the page and try again.")
                 }
             }
             </script>
@@ -52,10 +62,12 @@
     
     <header>
         <!-- Here is a button with an event handler to call the function backgroundColorChange -->
-        <button type="button" onclick="backgroundColorChange()">Click here to change the background color</button>
+        <button type="button" onclick="backgroundColorChange()">Click here to make changes to the webpage.</button>
     </header>
     
-    <div class="hero"></div>
+    <div class="hero">
+      <p id="message"></p>
+    </div>
       
   <!--row with one big box and one small box -->
       <div class="grid1">
