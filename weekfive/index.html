@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Document Tags -->
+    <meta charset="utf-8">
+
+    <link href="style.css" rel="stylesheet" type="text/css">  <!-- links CSS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> <!-- links Google Fonts -->
+    
+    <title>Polk County Public Schools Waitlist</title> <!-- displays on browser tab -->
+   
+    <script>
+
+        // this function uses eventhandler onclick to display each school's information.
+        function clickInfoLH() {
+            document.getElementById("lakelandHighlands").innerHTML = "Lakeland Highlands Middle School was established in 1975 and is located in southwest Lakeland between South Florida Avenue and Cleveland Heights Boulevard. The school operated as a junior high until 1993,  when it became a middle school serving grades six through eight. In 2012, LHMS  began offering pre-academies with tracks available in medicine, arts & entertainment, media design, aviation/engineering/robotics, culinary arts, agriculture, and video game design";
+        }
+
+        function clickInfoMB() {
+            document.getElementById("mulberry").innerHTML = "Currently, Mulberry MS has over 60 teachers and over 1100 students. The Mulberry Community has a diverse and rich history. Many may not be aware that the current site of Mulberry  Middle School was initially, the home to J.R.E. Lee Junior High School. In recognition of the heritage of our school the  Polk County School Board designated the Mulberry Middle school complex as the J.R.E. Lee Campus. The school offers extramural sports, a robust music program, and an Agriscience pre-academy.";
+        }
+
+        function clickInfoSW() {
+            document.getElementById("southwest").innerHTML = "SWMS is proud to offer pre-academies in opportunity-rich fields including agriculture, business technology, culinary arts, media design, and science and technology innovation. Each of the pre-academies is designed to provide students with a solid foundation for their future studies and careers. SWMS is also home to the only deaf and hard-of-hearing (DHH) program for middle school students in the school district. This program includes two teachers, three interpreters and two paraprofessionals. We sponsor the Sign Language Club and the Deaf Culture Club (DCC).";
+        }
+
+        
+
+
+
+
+
+
+        // this function takes the form object and outputs the user entered values
+        // it doesn't return anything
+        function process_form(form) {
+            var name = form.input_name.value;
+            var gender = form.input_gender.value;
+            var email = form.input_email.value;
+            var password = form.input_password.value;
+
+            // at this point we simply display user entered values
+            window.alert("name:" + name + " gender:" + gender + " email:" + email + " password:" + password);
+
+            // don't forget to use console log for debugging
+            console.log("name:" + name + " gender:" + gender + " email:" + email + " password:" + password);
+
+            // this is where you could have logic that takes user supplied values and does something with them...
+
+        }
+        
+        // this function takes email paremeter and matches it against the regular expression expecting: email@domain.ext
+        // it returns true if successful or false otherwise
+        function validate_email(email) {
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+                return (true);
+            }
+            alert("You have entered an invalid email address!");
+            return (false);
+        }
+    </script>
+</head>
+
+
+
+
+
+
+
+
+<!-- content -->
+<body>
+
+    <div id="wrapper"><!-- keeps page centered/focused-->
+
+    <header><h1>Polk County Public Schools<br>Waitlist Form</h1></header>
+
+    <!-- row with three equal boxes -->
+		<div class="schoolInfo">
+			
+			<!-- Lakeland Highlands Middle School section --><section>
+                <button onclick="clickInfoLH()"><h2>Lakeland Highlands<br>Middle School</h2></button>
+                    <p id="lakelandHighlands"></p> <!-- assign id to each school's information, function will call upon each one-->
+            </section>
+			
+            
+            <!-- Mulberry Middle School section --><section>
+			    <button id="buttonMB" onclick="clickInfoMB()"><h2>Mulberry Middle School</h2></button><br><br>
+                    <p id="mulberry"></p> <!-- assign id to each school's information, function will call upon each one-->       
+            </section>
+
+
+
+            <!--Southwest Middle School section --><section>
+                <button id="buttonSW" onclick="clickInfoSW()"><h2>Southwest Middle School</h2></button><br>
+                    <p id="southwest"></p> <!-- assign id to each school's information, function will call upon each one-->
+            </section>
+		
+
+		</div><!-- closes schoolInfo -->
+<br>
+
+<div class="mainForm">
+    <article><!-- instructions on how to complete form fields for parents -->
+    <h2><u>Contact Us</u></h2>
+    <p>Polk County Public Schools currently uses a waitlist for incoming students.
+       Please complete this form to let us know you are interested in placement and allow 2-3 business days for a response.
+    </p>
+<br>
+    <p>The mission of Polk County Public Schools is to provide a high-quality education for all students.</p>
+    
+       
+<br>    
+    <img src="pcpslogo.jpeg">
+   
+    </article>
+
+    <aside>
+        <form id="my_form" action="mailto:shinawongsea@usf.edu" enctype="text/plain">
+            <h2><u>Waitlist Form</u></h2>
+            <div class="form-group"> <!-- form field PARENT'S NAME -->
+                <label for="input_name">Parent's Name</label>
+                <input type="text" class="form-control" id="input_name" placeholder="Name">
+            </div>
+    
+            <div class="form-group">
+                <label for="input_phone_number">Phone Number</label><!-- form field PHONE NUMBER-->
+                <input type="text" class="form-control" id="input_name" placeholder="XXX-XXX-XXXX">
+            </div>
+    
+            <div class="form-group">
+                <label for="input_email">Email address</label><!-- form field EMAIL ADDRESS -->
+                <!-- NOTICE: document.getElementById("input_email").value can be replaced with this.value in function call below -->
+                <input type="email" class="form-control" id="input_email" placeholder="Email" onfocusout="return validate_email(this.value)">
+            </div>
+<br>
+            <div class="form-group">
+                <label for="input_contact_method">Preferred contact method</label><!-- form field PREFERRED CONTACT METHOD -->
+                <select class="form-control" id="input_contact_method">
+                  <option value="none">Please Select</option>
+                  <option value="phone">Phone</option>
+                  <option value="email">Email</option>
+                </select>
+            </div>
+<br>
+<hr><!-- divides parent and child(ren) sections of the form-->
+<br>
+    
+            <div class="form-group"> <!-- form field CHILD'S NAME -->
+                <label for="input_name">Child's Name</label>
+                <input type="text" class="form-control" id="input_name" placeholder="Name">
+            </div>
+<br>
+            <div class="form-group">
+                <label for="input_age">Age</label><!-- form field AGE -->
+                <select class="form-control" id="input_contact_method">
+                    <option value="none">Please Select</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="11">12</option>
+                    <option value="11">13</option>
+                    <option value="11">14</option>
+                    <option value="11">15</option>
+                </select>       
+            </div>
+<br>
+            <div class="form-group">
+                <label for="input_gender">Gender</label><!-- form field GENDER -->
+                <select class="form-control" id="input_gender">
+                  <option value="none">Please Select</option>
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                  <option value="ither">Other</option>
+                </select>
+            </div>
+<br>
+            <div class="form-group">
+                <label for="input_grade">Incoming Grade Level</label><!-- form field INCOMING GRADE LEVEL -->
+                <select class="form-control" id="input_grade">
+                  <option value="none">Please Select</option>
+                  <option value="6th">6th</option>
+                  <option value="7th">7th</option>
+                  <option value="8th">8th</option>
+                </select>
+            </div>
+<br>
+            <div class="form-group">
+                <label for="input_school">School Selection</label><!-- form field INCOMING GRADE LEVEL -->
+                <select class="form-control" id="input_school">
+                  <option value="none">Please Select</option>
+                  <option value="Lakeland Highlands">Lakeland Highlands</option>
+                  <option value="Mulberry">Mulberry</option>
+                  <option value="Southwest">Southwest</option>
+                </select>
+            </div>
+<br>
+
+        <!-- for submit button -->
+        <button type="submit" value="send">Send</button>
+        </form><!-- closes form -->
+    </aside>
+
+   
+</div> <!-- closes mainForm-->
+
+
+      
+
+    
+    
+    
+    
+    </div> <!-- closes wrapper -->
+</body>
+
+</html>
