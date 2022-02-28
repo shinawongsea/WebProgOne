@@ -28,9 +28,16 @@
             document.getElementById("southwest").innerHTML = "SWMS is proud to offer pre-academies in opportunity-rich fields including agriculture, business technology, culinary arts, media design, and science and technology innovation. Each of the pre-academies is designed to provide students with a solid foundation for their future studies and careers. SWMS is also home to the only deaf and hard-of-hearing (DHH) program for middle school students in the school district. This program includes two teachers, three interpreters and two paraprofessionals. We sponsor the Sign Language Club and the Deaf Culture Club (DCC).";
         }
 
+         // adapted from Dr. Smith's Bootstrap Form example
+        // this function takes the form object and outputs a window alert for visual confirmation of form submission    
+        // it doesn't return anything
+        function process_form(form) {
+        // at this point we simply display user entered values
+            window.alert("Thank you for submitting the form. We will contact you within 2-3 business days.");
 
+}
         
-        // below per Dr. Smith's Bootstrap Form example in order to validate that user has input the email in correct format
+        // adapted from  Dr. Smith's Bootstrap Form example in order to validate that user has input the email in correct format
         // this function takes email paremeter and matches it against the regular expression expecting: email@domain.ext
         // it returns true if successful or false otherwise
         function validate_email(email) {
@@ -98,7 +105,7 @@
     </article>
 
     <aside>
-        <form id="my_form" action="mailto:shinawongsea@usf.edu" subject="New Waitlist Inquiry" method="post" enctype="text/plain">
+        <form id="my_form">
             <h2><u>Waitlist Form</u></h2>
             <div class="form-group"> <!-- form field PARENT'S NAME -->
                 <label for="input_name">Parent's Name</label>
@@ -178,7 +185,7 @@
 <br>
 
         <!-- for submit button -->
-            <button type="submit" value="Send">Send</button>
+            <button type="submit" onclick="process_form(document.getElementById('my_form'))">Send</button>
         </form><!-- closes form -->
     </aside>
 
