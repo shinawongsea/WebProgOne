@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Age (Years to Days) Calculator</title>
+<!------   Link CSS   ------------>
+<link href="style.css" rel="stylesheet" type="text/css"> 
+<!------   Link Google Fonts  ------------>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+<!------   JavaScript   ------------>
+<script>
+	
+  /* function that takes age (years) and converts the value into days */
+  function feelingOld(aNumber)
+  {
+ 
+  var ageYears = document.getElementById("input1"); /*this variable gives us the object from the form */
+  var element1 = ageYears.value; /*this variable gives us the value of the input1 object*/
+  var days = element1*365; /*this is the calculation being performed*/
+  
+   
+   /*Message will display after clicking button*/
+   document.getElementById("ageMsg").innerHTML = "Wow! You are about " + days + " days old.";
+    
+  
+  }
+</script>
+
+</head>
+<body>
+  <!------ Keeps page centered------------> 
+  <div id="wrapper">
+
+    <header></header>
+
+    <div id="main">
+      <!------   Input your age and then click on the button, which calls a function to calculate your age in days  ------------>
+    <form id="form">
+
+	    <input type="number" id="input1" >
+  
+    </form>
+
+      <!------ Create button with eventhandler onclick to run function ------------>  
+       <input type="button" onclick="feelingOld(document.getElementById('input1').value)" value="Discover your age in days">
+
+      <p id="ageMsg"> Your approximate age in days will be displayed here.</p>
+    </div> <!------ Closes main div ------------> 
+
+  </div> <!------ Closes wrapper div ------------> 
+</body>
+
+</body>
+</html>

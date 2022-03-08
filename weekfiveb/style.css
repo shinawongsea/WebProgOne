@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* CSS Document 
+
+Uses Google Font "Montserrat" linked to the HTML file */
+
+
+
+body{
+	background: #fffdf3;  /*default background color*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #89668f;
+	
+}
+
+header{
+	
+	background-color: #fffdf3; 
+	height: 100px;
+	
+}
+
+#wrapper{ /* keeps page centered and focused */
+	
+	width: 750px;
+	margin: 0 auto;
+	background-color: #fffdf3;
+	
+}
+
+#main{ /* styles area around form */
+	height: 225px;
+	background-color: #f2f0f6;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+	
+}
+
+input[type=number]{ /* styles form */
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=button] { /* styles button */
+    width: 95%;
+    background-color: #b2aeec;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+  }
+
+  input[type=button]:hover { /* styles mouse over */
+    background-color: #9796ce;
+  }
