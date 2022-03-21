@@ -1,0 +1,61 @@
+<html>
+
+<head>
+          
+    <title>Week Six Object Practice</title>
+
+    <!------   Link CSS   ------------>
+    <link href="style.css" rel="stylesheet" type="text/css"> 
+
+    <!------   Link Google Fonts  ------------>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+   <!------   JavaScript   ------------>
+    <script>
+        var my_food = {
+            /* objects listed below*/
+	        dessertType: "cake",
+            dessertName: "Black Forest Gateau",
+	        color: "brown",
+            flavor: "chocolate",
+            texture: "decadent",
+            structure: "three-layered",
+            texture2: "moist",
+            temperature: "warm",
+            
+  
+
+            /* function*/
+            describeFood: function ()
+            {
+            /*Message will display after clicking button, this will call upon objects*/
+            return ("I want to devour a " + this.dessertType + ".  May I please have a " +   this.temperature  + ", " + this.texture + ", " + this.structure + " " +this.dessertName + "?");
+            } 
+        };
+
+    </script>
+
+</head>
+
+
+<body>
+
+    <!------ Keeps page centered------------> 
+    <div id="wrapper">
+      
+        <header></header>
+      
+         <div id="main">
+
+            <p id="imHungry">I want to eat something sweet.</p>
+ 
+            <button onclick="document.getElementById('imHungry').innerHTML = my_food.describeFood()">What do I want to eat?</button>
+        
+        </div> <!------ Closes main div ------------> 
+      
+    </div> <!------ Closes wrapper div ------------> 
+      
+</body>
+</html>

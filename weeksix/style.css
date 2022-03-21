@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* CSS Document 
+
+Uses Google Font "Montserrat" linked to the HTML file */
+
+
+
+body{
+	background: #C6A590;  /*default background color*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #95675B;
+	
+}
+
+header{
+	
+	background-color: #C6A590; 
+	height: 100px;
+	
+}
+
+#wrapper{ /* keeps page centered and focused */
+	
+	width: 800px;
+	margin: 0 auto;
+	background-color: #C6A590;
+	
+}
+
+#main{ /* styles main */
+	height: 225px;
+	background-color: #EDE5E1;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+	
+}
+
+
+
+button { /* styles button */
+    width: 95%;
+    background-color: #D4AC74;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+
+}
+
+ button:hover { /* styles mouse over */
+    background-color: #66060a;
+  }
