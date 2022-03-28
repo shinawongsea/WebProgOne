@@ -14,6 +14,7 @@
 <!------   Link Google Fonts  ------------>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
 <!------   JavaScript   ------------>
@@ -145,7 +146,7 @@
         <br>
 
         <!-- button placement with eventhandler onclick to process form and return info below-->
-        <button type="button" class="btn btn-primary" onclick="process_form()">Submit Appointment Request</button>
+        <button type="button" class="btn btn-primary" onclick="process_form(document.getElementById('form'))">Submit Appointment Request</button>
         
         <!-- return info area to include: appointment date/time and services chosen, office will contact you to confirm appointment-->
         <div id="confirmAppt"></div> 
