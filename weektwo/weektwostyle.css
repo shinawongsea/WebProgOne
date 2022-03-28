@@ -31,7 +31,10 @@ header{
 	background-color: #FCBB9F;
 	border-radius: 25px;
 	
-	
+}
+
+header img{
+	height: 100px;
 }
 
 

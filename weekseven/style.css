@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* CSS Document 
+
+Uses Google Font "Montserrat" linked to the HTML file
+
+Document colors
+- Dark green #4C411A
+- Sage #A4AA83
+- Light pea #D8DDB8
+- Champagne #F3EED9
+
+*/
+
+
+body{
+	background: #fffdf3;  /*default background color*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #89668f;
+	
+}
+
+header{
+	
+	background-color: #fffdf3; 
+	height: 150px;
+	
+}
+
+#wrapper{ /* keeps page centered and focused */
+	
+	width: 1024px;
+	margin: 0 auto;
+	background-color: #fffdf3;
+	
+}
+
+#main{ /* styles area around form */
+	height: 1000px;
+	background-color: #D8DDB8;
+    text-align: left;
+    padding: 20px;
+    padding-left: 40px;
+    border-radius: 10px;
+	
+}
+
+header{ /* styles header */
+	text-align: left;
+	padding-left: 40px;
+    padding-top: 20px;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	height: 200px;
+	background-color: #F3EED9;
+	border-radius: 10px;
+    color: #4C411A;
+    font-size: 35px;
+
+}
+
+header img{
+    height: 35%;
+    
+}
+
+input[type=number]{ /* styles form */
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text]{ /* styles form */
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button { /* styles button */
+    width: 100%;
+    background-color: #A4AA83;
+    color: #F3EED9;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+  }
+
+button:hover { /* styles mouse over */
+    background-color: #4C411A;
+  }
