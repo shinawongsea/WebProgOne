@@ -30,37 +30,32 @@ body{
 }
 
 #main{ /* styles area around form */
-	height: 1000px;
+	height: 850px;
 	background-color: #D8DDB8;
     text-align: left;
     padding: 20px;
-    padding-left: 40px;
+    padding-left: 30px;
     border-radius: 10px;
 	
 }
 
+
 header{ /* styles header */
-	text-align: left;
-	padding-left: 40px;
-    padding-top: 20px;
+	text-align: center;
 	display: grid;
-	grid-template-columns: 1fr 3fr;
+	grid-template-columns: 2fr;
 	height: 200px;
 	background-color: #F3EED9;
 	border-radius: 10px;
     color: #4C411A;
-    font-size: 40px;
-    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    padding-bottom: 10px;
 
 
 }
 
-header img{
-    height: 35%;
-    
-}
 
-input[type=number]{ /* styles form */
+input[type=number], #credits { /* styles form */
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -88,8 +83,22 @@ button { /* styles button */
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
+    padding-left: 0px;
   }
 
 button:hover { /* styles mouse over */
     background-color: #4C411A;
   }
+
+#review { /* styles return area */
+    text-align: center;
+	display: grid;
+	grid-template-columns: 2fr;
+	height: 100px;
+	background-color: #F3EED9;
+	border-radius: 10px;
+    color: #4C411A;
+    font-size: 25px;
+    padding-top: 30px;
+    
+}

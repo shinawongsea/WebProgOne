@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<!-- this is week 7 in-class example of JS object implementation, forms, bootstrap, etc. -->
+<head>
+
+    <!-- Alexis Shinawongse
+         The purpose of this web page is to assist MLIS students with their mid-program reviews. The form provides checkboxes
+          for tasks that students must complete, as well as verifying university graduation requirements. This should help
+          students stay on track for graduation.
+        
+        This form was adapted from Dr. Smith's in-class example titled covid.html.-->
+   
+    <title>MLIS Mid-Program Review</title>
+
+    <!------   Link CSS   ------------>
+    <link href="style.css" rel="stylesheet" type="text/css"> 
+
+    <!------   Link Google Fonts  ------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+ 
+    <script>
+        // Student Object definition
+        function Student (fm) {
+            // constructor
+            this.name = fm.name.value; //name
+            this.uid = fm.uid.value; //UID#
+            this.email = fm.email.value; //USF email
+            this.credits = Number(fm.credits.value);
+            this.action1 = fm.action1.checked; // Sent updated Program Plan to advisor 
+            this.action2 = fm.action2.checked; // Sent portfolio draft to advisor
+            this.action3 = fm.action3.checked; // Completed MLIS Canvas Org module: 16-21 hours
+            this.grad1 = fm.grad1.checked; // GPA above 3.00
+            this.grad2 = fm.grad2.checked; // No "I" grades (incomplete)
+
+           
+            // return status text
+            this.confirmation = function () {
+
+                //I would have tried getting into switch statements, but was focused on functionality rather than organization at this point
+                // >= is greater than or equal to, && is and, || is or
+
+                // if student has completed all tasks and currently meets OGS graduation requirements
+                if (this.credits >= 15 && this.action1 && this.action2 && this.action3 && this.grad1 && this.grad2) {
+                    return "You are on track for graduation - keep up the good work!<br>Thank you for completing your mid-program review.";
+                }
+
+                 // if student does not have enough credits to be considered mid-program, regardless of tasks completed and graduation requirements met
+                 else if (this.credits <= 12) {
+                    return "You have not reached the midpoint in the program yet.<br>If you have additional questions, contact your advisor.";
+                 }
+
+                // if student has completed some tasks and current meets OGS requirements
+                else if (this.credits >= 15 && this.action1 || this.action2 || this.action3 && this.grad1 && this.grad2) {
+                    return "Please complete the remaining tasks for your mid-program review.<br>If you have additional questions, contact your advisor.";
+                }
+               
+                 // if student does not meet OGS requirements, tasks completed
+                 else if (this.credits >= 15 && (this.action1 || this.action2 || this.action3)) {
+                    return "Currently, you do not meet university graduation requirements.<br>Please contact the Academic Program Specialist immediately.";
+                }
+
+                 // if student does not meet OGS requirements, regardless of tasks completed
+                 else if (this.credits >= 15 && (this.grad1 || this.grad2)) {
+                    return "Currently, you do not meet university graduation requirements.<br>Please contact the Academic Program Specialist immediately.";
+                }
+
+                // if student has not completed any tasks
+                else {
+                    return "Please complete the remaining tasks for your mid-program review.<br>If you have additional questions, contact your advisor.";
+                }
+
+                
+            }
+
+        }
+
+        function process_form() {
+            // get form object
+            var fm = document.getElementById("my_form");
+            // get output object
+            var out = document.getElementById("review");
+            // instantiate patient object
+            var student = new Student(fm);
+           
+            out.innerHTML = student.confirmation();
+        }
+    </script>
+</head>
+
+<body>
+
+    <!------ Keeps page centered------------> 
+<div id="wrapper">
+
+    <header>
+       
+        <h3>MLIS Mid-Program Review</h3>
+    
+    </header>
+
+    <br>
+   
+
+    <div id="main">
+
+        <h4>This tool is for MA Library and Info Sci students approaching their midpoint in the program.<br><br>
+            Please refer to the MLIS Canvas Org for additional portfolio guidance.
+        </h4>
+
+        <hr>
+
+        <br>
+
+         <!-- Begin form fields -->
+        <form id="my_form">
+            <!-- student info -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+
+            <div class="form-group">
+                <label for="uid">UID#</label>
+                <input type="text" class="form-control" id="uid">
+            </div>
+
+            <div class="form-group">
+                <label for="email">USF Email</label>
+                <input type="text" class="form-control" id="email">
+            </div>
+
+            <div class="form-group">
+                <label for="credits">Credits Earned</label>
+                <select class="form-control" id="credits">
+                    <option value="0">Select an option</option>
+                    <option value="12">12 or less</option>
+                    <option value="15">More than 15</option> 
+                </select>
+            </div>
+
+            <!-- mid-program review tasks as check boxes-->
+            <h4>Please check the tasks you have completed:</h4>
+    
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="action1">
+                <label class="form-check-label" for="action1">Sent updated Program Plan to advisor</label>
+            </div>
+
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="action2">
+                <label class="form-check-label" for="action2">Sent portfolio draft to advisor</label>
+            </div>
+
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="action3">
+                <label class="form-check-label" for="action3">Reviewed MLIS Canvas Org module: 16-21</label>
+            </div>
+
+            <br>
+
+            <h4>Verify that you currently meet these graduation requirements:</h4>
+
+            <!-- university gradution requirements -->
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="grad1">
+                <label class="form-check-label" for="grad1">Minimum 3.00 GPA</label>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="grad2">
+                <label class="form-check-label" for="grad2">No "I" (incomplete) grades on record</label>
+            </div>
+
+            <br>
+            <br>
+
+             <!-- button placement with eventhandler onclick to process form and return info below-->
+            <button type="button" onclick="process_form()">Check my status</button>
+
+           
+           <!-- return info area, will include status of student's mid-program review-->
+            <div id="review"></div>
+
+        </form> <!-- closes form -->
+
+    </div> <!-- closes main div -->
+
+</div> <!-- closes wrapper div -->
+
+</body>
+
+</html>
