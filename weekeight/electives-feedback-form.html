@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+
+  <!-- Alexis Shinawongse
+       Week Eight assignment
+       EME 6930 WP1
+                    -->
+  <title>Electives Suggestion Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- link Bootstrap from w3 schools -->
+  <link href="bootstrap.css" rel="stylesheet"/>
+
+   <!-- link CSS (I know I used both a Bootstrap CSS and my own CSS. I plan to learn more about Bootstrap on my own time
+    but for now I am mixing the two style sheets. I really liked their button styling!)-->
+   <link href="style.css" rel="stylesheet" type="text/css"/>
+
+  <script type="text/javascript">
+
+  // Set up an array of electives and special topics courses. spec is specialization(s) or special topics, areas of librarianship
+
+  // global variable can be accessed by any function in the script
+  var spec = [ "Academic libraries", "Youth services", "Community engagement", "Preservation", ];
+
+  // function adds user input to existing array   
+  function submitSpec()
+    {
+
+    // The push() method adds new items to the end of an array.
+
+    // The push() method changes the length of the array.
+
+    // The push() method returns the new length.
+
+      spec.push(prompt("What kinds of electives or special topics would you like take?"));
+        showAll();
+  }
+
+  // function displays array with inputs
+  function showAll()
+    {
+    
+      document.getElementById("confirm").innerHTML = "Recent submissions: " + spec;
+
+    }
+
+  </script>
+ </head>
+<body>
+
+
+
+<div id="wrapper">
+
+  <div class="container mt-3">
+    <h2>MLIS FeedBack Form</h2>
+
+    <br>
+
+    <p>The program welcomes student suggestions for electives and special topics offerings.</p>
+
+    <br>
+
+    <!-- button uses event handler onclick to call function submitSpec adds the input to the list and confirm submission-->
+    <button type="button" class="btn btn-primary" onclick="submitSpec()">Submit your suggestion</button>
+
+    <br>
+    <br>
+    <hr> <!-- horizontal line -->
+
+    <!-- array with additions will be shown here-->
+      <p id="confirm"></p></p>
+
+
+  </div> <!-- closes div container-mt-3-->
+
+</div> <!-- closes div id wrapper -->
+
+</body>
+</html>

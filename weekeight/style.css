@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* CSS Document
+
+Alexis Shinawongse
+Week Eight assignment
+EME 6930 WP1
+
+*/
+
+body{ /* styles document background color and default font color */
+    background-color: #EFF0F1;
+    color: #2b2b2b;
+}
+
+h2 { /* styles h2 */
+    color: #0c6efd;
+    padding-top: 10px;
+}
+
+#wrapper{ /* styles wrapper div to keep page centered and focused */
+    background-color: #e6e9eb;
+    width: 1024px;
+	margin: 0 auto;
+    border-radius: 10px;
+    height: 400px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+
+}
+
+.container mt-3 { /* styles container */
+    margin-top: 10px;
+}
+
+hr{ /* styles horizontal line */
+    background-color: #2b2b2b;
+    height: 5px;
+    width: 97.5%;
+    
+}
