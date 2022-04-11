@@ -1,0 +1,205 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+	<link href="style.css" rel="stylesheet" type="text/css">
+	
+	<link href="fontAwesome/css/all.css" rel="stylesheet" type="text/css">
+
+<!-- slideshow stuff -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+	
+	<link rel="stylesheet" href="w3Style.css">
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	
+<title>Title</title>
+
+	<style>
+		.mySlides {display:none;}
+	</style>
+	
+	
+	</head>
+
+<body>
+	
+	<header>
+		<h1>Title</h1>
+	</header>
+	
+	<div class="slideshow">
+		<div class="w3-content w3-section" style="max-width:1280px">
+  		<img class="mySlides" src="images/library-side.jpeg" style="width:100%">
+ 		<img class="mySlides" src="images/storytelling.jpeg" style="width:100%">
+  		<img class="mySlides" src="images/teamwork.jpeg" style="width:100%">
+	</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script> 
+	
+		 
+	</div>
+	
+	<div class="mainLesson">
+
+<!-- mainLesson row -->
+		
+		<article>
+			<h2>Title</h2>
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+               labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+			</p>
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			
+			<ol>
+				<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+				<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+				<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+			</ol>
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                aboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+			</p>
+			
+			<img id="sandpic" src="images/UABB-slide-no-url-2.png" alt="Picture">
+			
+		</article>
+		
+		
+		
+		
+			<aside>
+			<img src="images/eportfolio-638.jpeg" alt="Picture">
+			
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br>
+                dolore eu fugiat nulla pariatur.
+			</p>
+		
+			<div class="funFact">
+				<h3>Title</h3>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			</div>
+			</aside>
+	
+	</div><!--closes mainLesson -->
+	
+	
+<!-- parallax row -->
+	
+	<div class="parallax"></div>	
+
+	
+	
+	
+	
+<!-- row with video and text -->
+	
+	<div class="videoText">
+		<section>
+			<h2>Title</h2>
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                dolore eu fugiat nulla pariatur.</p>
+		</section>
+		
+		<article>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/PeLoyrDqL_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</article>
+	</div><!-- closes videoText -->
+	
+	
+	
+<!-- footer -->
+	
+	<footer class="threeColumns">
+	
+		<section>
+			<h3>Alexis Shinawongse</h3>
+			<p>Web Programming I</p>
+			<p>EME 6930, Spring 2022</p>
+		</section>
+		
+		<section>
+			<a href="" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
+			<a href="" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+		</section>
+		
+		<section>
+			<h3>Student Resources</h4> <!-- columns time -->
+			
+			<div class="row">
+  				<div class="column">
+                    <p><a href="" target="_blank">Resource</a></p>
+				    <p><a href="" target="_blank">Resource</a></p>
+				    <p><a href="" target="_blank">Resource</a></p>
+				    <p><a href="" target="_blank">Resource</a></p>
+  				</div>
+				
+  				<div class="column">
+                    <p><a href="" target="_blank">Resource</a></p>	
+                    <p><a href="" target="_blank">Resource</a></p>
+				    <p><a href="" target="_blank">Resource</a></p>
+				    <p><a href="" target="_blank">Resource</a></p>
+				</div>
+				
+			</div>
+				
+		</section>
+	
+	</footer>
+	
+		 
+		
+
+		
+		
+	
+	
+	
+	
+	
+</body>
+	
+	
+	
+	
+	
+</html>

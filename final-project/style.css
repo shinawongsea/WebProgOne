@@ -1,0 +1,318 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+html {
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;	
+}
+
+body {
+	margin:0;
+	background-color: #FFEFBA;
+	font-family: 'Nunito', sans-serif;	
+}
+
+h1 {
+	color: #D58258;
+	font-family: 'Viga', sans-serif;
+		
+}
+h3, h4 {
+	
+color: #FFEFBA;
+	font-family: 'Viga', sans-serif;	
+	
+}
+
+
+h2 {
+	font-family: 'Viga', sans-serif;
+	color: #D58258;
+	
+}
+	
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #44332C;
+	color: burlywood;
+	box-sizing: border-box;
+	clear: both;
+	z-index: 1;
+	height: 125px;
+	
+}
+
+header h1 {
+	text-align: center;
+	font-size: 50px;
+}
+
+.mainLesson {
+	background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(left, #FFFFFF, #FFEFBA);
+    background: -o-linear-gradient(left, #FFFFFF, #FFEFBA);
+    background: linear-gradient(to top, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+
+}
+
+.mainLesson h2, .videoText h2 {
+	margin: 0;
+}
+
+.videoText iframe {
+	
+	border: double thick #5F61F6;
+	padding: 2%;
+	box-sizing: border-box;
+	background-color: #FFF2C8;
+	border-color: #9D8A75;
+}
+
+.funFact {
+	border: double thick #5F61F6;
+	padding: 2%;
+	box-sizing: border-box;
+	background-color: white;
+	border-color: #9D8A75;
+}
+
+.funFact h3 {
+	margin: 0;
+	color: #D58258;
+}
+
+.parallax {
+	background-image:url("images/parallax-earthquake-cracks.jpeg");
+	height: 300px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	clear: both;
+}
+
+footer {
+	display: grid;
+	grid-template-columns: auto;
+	background-color: #44332C;
+	color: white;
+	box-sizing: border-box;
+}
+
+footer i {
+	margin: 1%;
+	color: #D58258;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#sandpic {
+	
+	display: block;
+ 	margin-left: auto;
+  	margin-right: auto;
+	height: 300px;
+	width: 700px;
+	
+}
+
+/* this targets PHONES */
+@media screen and (max-width: 640px) {
+	
+	.slideshow {
+		padding-top: 125px;
+	}
+	
+	.mainLesson {
+		display: grid;
+		vertical-align: middle;
+		padding: 4%;
+		box-sizing: border-box;
+		width: 100%;
+		
+	}
+	
+	.mainLesson img {
+		width: 50%;
+		margin-left: 25%;
+	}
+	
+	#sandpic {
+		width: 50%;
+		margin-left: 25%;
+	}
+	
+	.videoText {
+		display: grid;
+		grid-template-columns: 1fr;
+		vertical-align: middle;
+		padding: 4%;
+		box-sizing: border-box;
+		width: 100%;
+	}
+	
+	.videoText iframe {
+		width: 426px;
+		height: 240px;
+	}
+	
+	.videoText article {
+		text-align: center;
+	}
+	
+	footer {
+		text-align: center;
+		padding: 4% 0;
+		box-sizing: border-box;
+	}
+}
+
+
+
+
+/* this targets TABLETS */
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+	
+	body {
+		font-size: 1.15em;
+	}
+	
+	.slideshow {
+		padding-top: 125px;
+	}
+	
+	.mainLesson {
+		display: grid;
+		grid-template-columns: 2fr 1fr; /* new */
+		vertical-align: middle;
+		padding: 6%; /* updated */
+		box-sizing: border-box;
+		width: 100%;
+		grid-column-gap: 5%; /* new */
+		
+	}
+	
+	.mainLesson img {
+		width: 100%;
+		/* margin-left: 25%; */
+	}
+	
+	.videoText {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-column-gap: 2%; /* new */
+		vertical-align: middle;
+		padding: 6%; /* updated */
+		box-sizing: border-box;
+		width: 100%;
+	}
+	
+	.videoText section {
+		margin-bottom: 3%;
+	}
+	
+	.videoText iframe {
+		width: 640px; /*updated */
+		height: 360px; /*updated */
+	}
+	
+	.videoText article {
+		text-align: center;
+	}
+	
+	footer {
+		text-align: center;
+		padding: 4%; /* updated */
+		box-sizing: border-box;
+	}
+	
+	.threeColumns {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 2%;
+	}
+}
+
+
+
+
+
+/* this targets DESKTOPS */
+@media screen and (min-width: 1024px){
+	
+	body {
+		font-size: 1.25em;
+	}
+	
+	.slideshow {
+		padding-top: 125px;
+	}
+	
+	.mainLesson {
+		display: grid;
+		grid-template-columns: 2fr 1fr; 
+		vertical-align: middle;
+		padding: 4%; /* updated */
+		box-sizing: border-box;
+		width: 100%;
+		grid-column-gap: 5%; 
+	}
+	
+	.mainLesson img {
+		width: 100%;
+		/* margin-left: 25%; */
+	}
+	
+	.videoText {
+		display: grid;
+		grid-template-columns: 1fr 1.5fr; /* updated */
+		grid-column-gap: 2%; 
+		vertical-align: middle;
+		padding: 4%; /* updated */
+		box-sizing: border-box;
+		width: 100%;
+	}
+	
+	.videoText section {
+		margin-bottom: 3%;
+	}
+	
+	.videoText iframe {
+		width: 640px; 
+		height: 360px; 
+	}
+	
+	.videoText article {
+		text-align: center;
+	}
+	
+	footer {
+		text-align: center;
+		padding: 4%; 
+		box-sizing: border-box;
+	}
+	
+	.threeColumns {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 2%;
+	}
+	
+}
