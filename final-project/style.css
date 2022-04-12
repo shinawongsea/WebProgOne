@@ -1,6 +1,13 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/* Alexis Shinawongse
+   Final Project, EME 6930 WPI
+   Spring 2022 */
+
+
+/* copy/paste document colors here */
+
 
 
 html {
@@ -66,7 +73,7 @@ header h1 {
 	margin: 0;
 }
 
-.videoText iframe {
+.videoText iframe { /* style video */
 	
 	border: double thick #5F61F6;
 	padding: 2%;
@@ -106,7 +113,7 @@ footer {
 	box-sizing: border-box;
 }
 
-footer i {
+footer i { /* style footer icons */
 	margin: 1%;
 	color: #D58258;
 }
@@ -123,7 +130,7 @@ footer i {
   clear: both;
 }
 
-#sandpic {
+#mainPic {
 	
 	display: block;
  	margin-left: auto;
