@@ -6,7 +6,29 @@
    Spring 2022 */
 
 
-/* copy/paste document colors here */
+/* Color palette from USF UCM Brand Palette
+
+	Main and secondary
+	USF Green #006747
+	USF Gold #CFC493
+	White #FFFFFF
+	Sand #EDEBD1
+	Evergreen #005432
+
+	Accent Colors
+	Lemongrass #DBE442
+	Apple #9CCB3B
+	Teal #009374
+	Seaglass #80B0A6
+	Storm #006484
+	Silver #CAD2D8
+	Gray #7E96A0
+	Slate #466069
+
+
+
+
+*/
 
 
 
@@ -17,27 +39,32 @@ html {
 
 body {
 	margin:0;
-	background-color: #FFEFBA;
-	font-family: 'Nunito', sans-serif;	
+	background-color: #FFFFFF;
+	font-family: 'Libre Franklin', sans-serif;	
 }
 
 h1 {
-	color: #D58258;
-	font-family: 'Viga', sans-serif;
+	color: #ffffff;
+	font-family: 'Libre Franklin', sans-serif;
+	
 		
 }
 h3, h4 {
 	
 color: #FFEFBA;
-	font-family: 'Viga', sans-serif;	
+	font-family: 'Libre Franklin', sans-serif;	
 	
 }
 
 
 h2 {
-	font-family: 'Viga', sans-serif;
+	font-family: 'Libre Franklin', sans-serif;
 	color: #D58258;
 	
+}
+
+p{
+	font-size: 1.5em;
 }
 	
 
@@ -46,18 +73,20 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #44332C;
-	color: burlywood;
+	background-color: #006747;
+	color: #ffffff;
 	box-sizing: border-box;
 	clear: both;
 	z-index: 1;
-	height: 125px;
+	height: 200px;
 	
 }
 
 header h1 {
 	text-align: center;
-	font-size: 50px;
+	font-size: 5em;
+	padding-top: 15px;
+	font-style: bold;
 }
 
 .mainLesson {
@@ -108,14 +137,14 @@ header h1 {
 footer {
 	display: grid;
 	grid-template-columns: auto;
-	background-color: #44332C;
+	background-color: #006747;
 	color: white;
 	box-sizing: border-box;
 }
 
 footer i { /* style footer icons */
 	margin: 1%;
-	color: #D58258;
+	color: #ffffff;
 }
 
 .column {
@@ -140,12 +169,51 @@ footer i { /* style footer icons */
 	
 }
 
+/* side nav bar */
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #466069; 
+	overflow-x: hidden;
+	transition: 0.3s; 
+	padding-top: 60px;
+  }
+  
+  .sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+	color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+
+
+
+
+/* begin responsive web design elements */
+
 /* this targets PHONES */
 @media screen and (max-width: 640px) {
 	
-	.slideshow {
-		padding-top: 125px;
-	}
+
 	
 	.mainLesson {
 		display: grid;
@@ -161,7 +229,7 @@ footer i { /* style footer icons */
 		margin-left: 25%;
 	}
 	
-	#sandpic {
+	#mainPic{
 		width: 50%;
 		margin-left: 25%;
 	}
@@ -201,9 +269,7 @@ footer i { /* style footer icons */
 		font-size: 1.15em;
 	}
 	
-	.slideshow {
-		padding-top: 125px;
-	}
+
 	
 	.mainLesson {
 		display: grid;
@@ -268,9 +334,7 @@ footer i { /* style footer icons */
 		font-size: 1.25em;
 	}
 	
-	.slideshow {
-		padding-top: 125px;
-	}
+
 	
 	.mainLesson {
 		display: grid;

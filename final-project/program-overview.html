@@ -5,70 +5,117 @@
 	 Spring 2022 -->
 
 <html>
-<head>
-<meta charset="UTF-8">
+<head>	
+	<meta charset="UTF-8">
 
-<!-- link style sheets, fonts -->
-	<link href="style.css" rel="stylesheet" type="text/css">
+<!-- link style sheets, fonts, and pre-made Bootstraps -->
+	
 	
 	<link href="fontAwesome/css/all.css" rel="stylesheet" type="text/css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
 	
-	<link rel="stylesheet" href="w3Style.css">
 	
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
-	
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-	
-<title>Title</title>
 
-<!-- slideshow stuff -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	
+	<link href="style.css" rel="stylesheet" type="text/css">
 
-	<style>
-		.mySlides {display:none;}
-	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&display=swap" rel="stylesheet">
+
 	
+
 	
-	</head>
+	<title>MA Library and Info Sci Orientation</title>
+	
+</head>
 
 <body>
 	
 	<header>
-		<h1>Title</h1>
-	</header>
-	
-	<div class="slideshow">
-		<div class="w3-content w3-section" style="max-width:1280px">
-  			<img class="mySlides" src="images/library-side.jpeg" style="width:100%">
- 			<img class="mySlides" src="images/storytelling.jpeg" style="width:100%">
-  			<img class="mySlides" src="images/teamwork.jpeg" style="width:100%">
-		</div>
+		<h1>Welcome, MLIS Students!</h1>
 
+	<!-- side nav html elements -->
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">Program Overview</a>
+		<a href="#">Advising & Registration</a>
+		<a href="#">Preparing for Classes</a>
+		<a href="#">Contact Us</a>
+	  </div>
+	  
+	  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Orientation Modules</span>
+
+	</header>
+
+
+
+
+	  
+	 
+	
+<!-- slideshow html elements -->	 
+<div class="container">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	  </ol>
+  
+	  <!-- Wrapper for slides -->
+	  <div class="carousel-inner">
+		<div class="item active">
+		  <img src="images/library-side.jpeg" alt="text" style="width:100%;">
+		</div>
+  
+		<div class="item">
+		  <img src="images/storytelling.jpeg" alt="text" style="width:100%;">
+		</div>
+	  
+		<div class="item">
+		  <img src="images/teamwork.jpeg" alt="text" style="width:100%;">
+		</div>
+	  </div>
+  
+	  <!-- Left and right controls -->
+	  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+		<span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+		<span class="sr-only">Next</span>
+	  </a>
+	</div>
+  </div>
+	
+	 <!-- closes slideshow -->
 
 <script>
-	// for slideshow
-var myIndex = 0;
-carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
+
+
+// for side nav bar
+function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+	  }
+	  
+	  function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+	  }
+
 </script> 
 	
 		 
-		</div> <!-- closes slideshow -->
+		
 
 <div class="mainLesson">
 
