@@ -2,7 +2,9 @@
 <!doctype html>
 <!-- Alexis Shinawongse
 	 Final Project, EME 6930 WPI
-	 Spring 2022 -->
+	 Spring 2022 
+	
+	Program Overview page-->
 
 <html>
 <head>	
@@ -16,11 +18,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
 	
-	
-
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	
-	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="style-program-overview.css" rel="stylesheet" type="text/css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
@@ -44,13 +44,14 @@
 	<!-- side nav html elements -->
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="#">Program Overview</a>
-		<a href="#">Advising & Registration</a>
-		<a href="#">Preparing for Classes</a>
-		<a href="#">Contact Us</a>
+		<a href="program-overview.html">Program Overview</a>
+		<a href="advising-and-registration.html">Advising & Registration</a>
+		<a href="preparing-for-classes.html">Preparing for Classes</a>
+		<a href="program-complete-orientation.html">Complete Orientation</a>
+		<a href="contact-us.html">Contact Us</a>
 	  </div>
 	  
-	  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Orientation Modules</span>
+	  <span id="sidenav-button" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Orientation Modules</span>
 
 	</header>
 
@@ -73,15 +74,15 @@
 	  <!-- Wrapper for slides -->
 	  <div class="carousel-inner">
 		<div class="item active">
-		  <img src="images/library-side.jpeg" alt="text" style="width:100%;">
+		  <img src="images/USFSI-carousel-logo.png" alt="USF School of Information Logo" style="width:100%;">
 		</div>
   
 		<div class="item">
-		  <img src="images/storytelling.jpeg" alt="text" style="width:100%;">
+		  <img src="images/storytelling.png" alt="LIS 5937 Digital Storytelling course flyer" style="width:100%;">
 		</div>
 	  
 		<div class="item">
-		  <img src="images/teamwork.jpeg" alt="text" style="width:100%;">
+		  <img src="images/RaiseYourVoice-Twitter-hashtag-url-1536x864.png" alt="Unite against book bans" style="width:100%;">
 		</div>
 	  </div>
   
@@ -122,56 +123,63 @@ function openNav() {
 <!-- mainLesson row -->
 		
 		<article>
-			<h2>Title</h2>
+			<h2>Program Overview</h2>
+			<br>
+			<p>The M.A. in Library and Information Science (MLIS) is designed to prepare students for careers and leadership
+			roles in library and information professions that serve the needs of a culturally diverse, technological society.
+			 The program is fully online (asynchronous), and offers student a flexible curriculum for them to meet their professional goals.
+			 Graduates of USF’s LIS program work in libraries, businesses, and various information agencies across the state, nationally,
+			and internationally. Students complete a set of six required core courses as the foundation for the degree and can choose a 
+			career path through seven electives in alignment with their professional goals and interests.
+			</p><br><br>
+
+			<h3>Accreditation</h3>
+			<br>
+			<p>The M.A. in Library and Information has been continually accredited by the American Library Association (ALA) since 1974,
+				with the most recent review for continued accreditation occurring in 2016.
+				Completion of the degree provides the professional credential commonly required for employment in many libraries
+				and other information agencies. For those interested in becoming School Library Media Specialists, 
+				the degree offers coursework that will prepare students to pass the examination for certification required by the 
+				State of Florida.</p><br><br>
 			
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-               labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+			<h3>Culminating Assessment</h3>
+				<br>
+			<p>In lieu of a Comprehensive Examination, students are required to submit a portfolio in accordance with program provided guidelines
+			   which exhibit competencies acquired during their program based on standards of the American Library Association. 
+			   It is the student’s responsibility to determine
+			   and gather appropriate artifacts and write a focused narrative which best represent their synthesis of program outcomes.
+			   The artifacts and narrative should be presented in a way which clearly indicates their knowledge and application of program outcomes.
 			</p>
-			
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-			
-			<ol>
-				<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-				<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-				<li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-			</ol>
-			
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                aboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-			</p>
-			
-			<img id="mainPic" src="images/UABB-slide-no-url-2.png" alt="Picture">
-			
+
 		</article>
 		
 		
 		
 		
 			<aside>
-			<img src="images/eportfolio-638.jpeg" alt="Picture">
-			
-			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br>
-                dolore eu fugiat nulla pariatur.
+			<img src="images/eportfolio-638.jpeg" alt="ePortfolio word cloud brainstorm">
+			<br><br>
+			<p>The ePortfolio represents a culminating assessment of your learning based on the MLIS program’s
+			student learning outcomes and professional preparation for the field of library and information Science.
 			</p>
-		
-			<div class="funFact">
-				<h3>Title</h3>
-				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			<br>
+			<div class="funFact"> <!-- box on the right side -->
+				<h3>Student Learning Outcomes</h3>
+				<p>
+					<ol>
+						<li><b>Leadership and Innovation:</b> Students are innovative, ethical, problem-solvers able to lead and manage through communication, collaboration, and reflection.</li>
+				   		<li><b>Systems and Services:</b> Students understand the systems and technologies that facilitate the management and use of information resources to serve the diverse needs of users.</li>
+				   		<li><b>Knowledge Representation:</b> Students are proficient in the theory and application of skills essential for knowledge representation in evolving technology environments, in any chosen area of specialization.</li>
+				   		<li><b>Theory and Praxis:</b> Students have a critical grounding in theoretical perspectives that draw on research in LIS as well as other fields of knowledge, that inform their professional practices including research, organization, management, and access to information.</li>
+					</ol>
+				</p>
 			</div>
 			</aside>
 	
 	</div><!--closes mainLesson -->
 	
 	
-<!-- parallax row -->
+<!-- parallax image row -->
 	
 	<div class="parallax"></div>	
 
@@ -183,16 +191,15 @@ function openNav() {
 	
 	<div class="videoText">
 		<section>
-			<h2>Title</h2>
+			<h2>LIS IRL</h2>
+			<br>
+			<p>Check out this video from Great Big Story on the world's most magnificent (and bizarre) libraries.
+			</p>
+			<p>From Great Big Story: <i>In this reel, we circumnavigate the globe in search of some of the most unusual and awe-inspiring libraries
+				collecting more than just books. We begin in Alaska at a particularly *macabre* library checking out
+				preserved and taxidermied animals, head on over to China to kick back in a surreal, infinite reading room,
+				and get whiff of history at the library of smells.</i></p>
 			
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-			
-			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
-                dolore eu fugiat nulla pariatur.</p>
 		</section>
 		
 		<article>
@@ -207,32 +214,34 @@ function openNav() {
 	<footer class="threeColumns">
 	
 		<section>
-			<h3>Alexis Shinawongse</h3>
+			<h3><a href="https://www.linkedin.com/in/alexis-shinawongse-a12892120/" target="_blank">Alexis Shinawongse</a></h3>
 			<p>Web Programming I</p>
 			<p>EME 6930, Spring 2022</p>
 		</section>
 		
-		<section>
-			<a href="" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
-			<a href="" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+		<section> <!-- fa-xx increases icon size-->
+			<a href="https://www.facebook.com/usfsi" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
+			<a href="https://www.instagram.com/usfsi/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+			<a href="https://twitter.com/USFSI?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
 		</section>
 		
 		<section>
-			<h3>Student Resources</h4> <!-- columns time -->
+			<h3>Student Resources</h4> <!-- columns -->
 			
 			<div class="row">
   				<div class="column">
-                    <p><a href="" target="_blank">Resource</a></p>
-				    <p><a href="" target="_blank">Resource</a></p>
-				    <p><a href="" target="_blank">Resource</a></p>
-				    <p><a href="" target="_blank">Resource</a></p>
+                    <p><a href="https://www.usf.edu/registrar/calendars/" target="_blank">Academic Calendar</a></p>
+				    <p><a href="https://www.usf.edu/career-services/" target="_blank">Career Services</a></p>
+				    <p><a href="https://www.usf.edu/student-affairs/counseling-center/" target="_blank">Counseling Center</a></p>
+				    <p><a href="https://www.usf.edu/financial-aid/questions/" target="_blank">Office of Financial Aid</a></p>
+					<p><a href="https://www.usf.edu/it/" target="_blank">Information Technology</a></p>
   				</div>
 				
   				<div class="column">
-                    <p><a href="" target="_blank">Resource</a></p>	
-                    <p><a href="" target="_blank">Resource</a></p>
-				    <p><a href="" target="_blank">Resource</a></p>
-				    <p><a href="" target="_blank">Resource</a></p>
+                    <p><a href="https://www.usf.edu/registrar/index.aspx" target="_blank">Office of the Registrar</a></p>	
+                    <p><a href="https://www.usf.edu/student-affairs/student-accessibility/" target="_blank">Student Accessibility Services</a></p>
+				    <p><a href="https://www.usf.edu/business-finance/controller/student-services/customer-service.aspx" target="_blank">Student Financial Services</a></p>
+				    <p><a href="https://www.usf.edu/student-affairs/veterans/" target="_blank">Veteran Success</a></p>
 				</div>
 				
 			</div>
