@@ -113,6 +113,10 @@ header h1 {
 	margin: 0;
 }
 
+.mainform p{
+	font-size: 1em;
+}
+
 .videoText iframe { /* style video */
 	
 	border: double thick #5F61F6;
@@ -180,15 +184,6 @@ a:hover, i:hover {
   clear: both;
 }
 
-#mainPic {
-	
-	display: block;
- 	margin-left: auto;
-  	margin-right: auto;
-	height: 300px;
-	width: 700px;
-	
-}
 
 .mainForm{ /*style form field area*/
 	
@@ -196,11 +191,12 @@ a:hover, i:hover {
 	grid-template-columns: 1fr 1fr;
 	grid-column-gap: 10px;
     color:#555555;
+	
 
 	
 }
 .mainForm article{ /*styles instructions area */
-	height: 550px;
+	height: 600px;
 	background-color: #FFFFFF;
     padding-top: 20px;
     padding-left: 40px;
@@ -216,7 +212,7 @@ a:hover, i:hover {
 }
 
 .mainForm aside {/*styles form field area */
-	height: 540px;
+	height: 600px;
 	background-color: #9CCB3B;
     padding-top: 20px;
     padding-left: 40px;
@@ -275,6 +271,10 @@ input[type=text]{
 	margin-left: 50px;
   }
 
+  .mainForm{
+	  width: 100%;
+  }
+
 
 
 
@@ -283,7 +283,13 @@ input[type=text]{
 /* this targets PHONES */
 @media screen and (max-width: 640px) {
 	
-
+	.myCarousel{
+		display: none;
+	}
+	
+	body{
+	font-size: 1em;
+	}	
 	
 	.mainForm {
 		display: grid;
@@ -298,8 +304,8 @@ input[type=text]{
 
 
 	.mainForm aside {/*styles form field area */
-		height: 540px;
-		background-color: #C2DBDF;
+		height: 600px;
+		background-color: #9CCB3B;
 		padding-top: 20px;
 		padding-left: 40px;
 		padding-right:40px;
@@ -311,11 +317,6 @@ input[type=text]{
 		color: #FFFFFF;
 	}
 	
-	hr{/*styles horizontal line in the form area */
-		background-color:#5ec4b9;
-		height: 3px;
-		border: none;
-	}
 	
 	input[type=text]{
 		margin: 8px;

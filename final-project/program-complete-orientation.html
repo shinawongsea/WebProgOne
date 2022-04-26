@@ -57,7 +57,9 @@
 
 
 
-
+<!-- parallax image row -->
+	
+<div class="parallax"></div>
 	  
 	 
 	
@@ -68,13 +70,12 @@
 	  <ol class="carousel-indicators">
 		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 		<li data-target="#myCarousel" data-slide-to="1"></li>
-		<li data-target="#myCarousel" data-slide-to="2"></li>
 	  </ol>
   
 	  <!-- Wrapper for slides -->
 	  <div class="carousel-inner">
 		<div class="item active">
-		  <img src="images/USFSI-carousel-logo.png" alt="USF School of Information Logo" style="width:100%;">
+		  <img src="images/it-resource.png" alt="USF IT Explore Applications" style="width:100%;">
 		</div>
   
 		<div class="item">
@@ -95,7 +96,7 @@
 		<span class="sr-only">Next</span>
 	  </a>
 	</div>
-  </div>
+</div>
 	
 	 <!-- closes slideshow -->
 
@@ -126,8 +127,8 @@ function openNav() {
         
 </script> 
 	
-		 
 		
+
 
 <div class="mainForm">
 
@@ -161,7 +162,15 @@ function openNav() {
 						<h2><u>Orientation Confirmation Form</u></h2>
 					</div>
 <br>
-					
+					<div class="form-group">
+						<label for="semester" class="form__label">Admission Semester</label>
+						<select name="school" id="school" class="form-control" >
+							<option value="0">Select Semester</option>
+							<option value="1">Fall 2022</option>
+							<option value="2">Spring 2022</option>
+							</select>
+
+					<br>
 					<div class="form-group"> <!-- form field STUDENT'S NAME -->
 						<label for="name" class="form-label">First and Last Name</label>
 						<input id="input_name" type="text" class="form-control" placeholder="First Name Last Name" name="name" required>

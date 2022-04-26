@@ -109,6 +109,11 @@ header h1 {
 	color: #009374;
 }
 
+#checklist {
+	max-width: 100%;
+	height: auto;
+}
+
 .videoText iframe { /* styles video */
 	
 	border: double thick #5F61F6;
@@ -162,6 +167,34 @@ a {
 a:hover, i:hover, button:hover {
 	color:#9CCB3B;
 	text-decoration : none;
+}
+
+article a{
+	color: black;
+}
+
+article a:hover{
+	color: #006484;
+}
+
+article i:hover{
+	color: black;
+}
+
+article li, i{
+	font-size: 1.5em;
+}
+
+.videoText a, a:hover{
+	color: black;
+}
+
+.videoText a:hover{
+	color: #006484;
+}
+
+.videoText li{
+	font-size: 1.5em;
 }
 
 .column {
@@ -230,7 +263,9 @@ a:hover, i:hover, button:hover {
 /* this targets PHONES */
 @media screen and (max-width: 640px) {
 	
-
+	.myCarousel{
+		display: none;
+	}
 	
 	.mainLesson {
 		display: grid;

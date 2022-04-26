@@ -88,6 +88,11 @@ header {
 	color: #9CCB3B;
 }
 
+.carousel-inner{
+	max-height: 800px;
+	max-width: 1280px;
+}
+
 header h1 {
 	text-align: center;
 	font-size: 5em;
@@ -109,14 +114,6 @@ header h1 {
 	color: #009374;
 }
 
-.videoText iframe { /* styles video */
-	
-	border: double thick #5F61F6;
-	padding: 2%;
-	box-sizing: border-box;
-	background-color: #FFF2C8;
-	border-color: #9D8A75;
-}
 
 .funFact {
 	border: double thick #5F61F6;
@@ -162,6 +159,27 @@ a {
 a:hover, i:hover, button:hover {
 	color:#9CCB3B;
 	text-decoration : none;
+}
+
+article a, aside a, .videoText a{
+	color: black;
+}
+
+article a:hover, aside a:hover, .videoText a:hover{
+	color: #006484;
+}
+
+article i:hover{
+	color: black;
+}
+
+article li, i{
+	font-size: 1.5em;
+}
+
+#textbook {
+	max-width: 100%;
+	height: auto;
 }
 
 .column {
@@ -222,6 +240,12 @@ a:hover, i:hover, button:hover {
 	margin-left: 50px;
   }
 
+.videoText article{
+	background-color: #EDEBD1;
+	text-align: left;
+	padding: 20px;
+}
+
 
 
 
@@ -230,6 +254,9 @@ a:hover, i:hover, button:hover {
 /* this targets PHONES */
 @media screen and (max-width: 640px) {
 	
+	#myCarousel {
+		display: none;
+	}
 
 	
 	.mainLesson {
@@ -258,15 +285,6 @@ a:hover, i:hover, button:hover {
 		padding: 4%;
 		box-sizing: border-box;
 		width: 100%;
-	}
-	
-	.videoText iframe {
-		width: 426px;
-		height: 240px;
-	}
-	
-	.videoText article {
-		text-align: center;
 	}
 	
 	footer {
@@ -318,14 +336,6 @@ a:hover, i:hover, button:hover {
 		margin-bottom: 3%;
 	}
 	
-	.videoText iframe {
-		width: 640px; /*updated */
-		height: 360px; /*updated */
-	}
-	
-	.videoText article {
-		text-align: center;
-	}
 	
 	footer {
 		text-align: center;
@@ -382,14 +392,7 @@ a:hover, i:hover, button:hover {
 		margin-bottom: 3%;
 	}
 	
-	.videoText iframe {
-		width: 640px; 
-		height: 360px; 
-	}
-	
-	.videoText article {
-		text-align: center;
-	}
+
 	
 	footer {
 		text-align: center;

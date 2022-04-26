@@ -109,14 +109,6 @@ header h1 {
 	color: #009374;
 }
 
-.videoText iframe { /* styles video */
-	
-	border: double thick #5F61F6;
-	padding: 2%;
-	box-sizing: border-box;
-	background-color: #FFF2C8;
-	border-color: #9D8A75;
-}
 
 .funFact {
 	border: double thick #5F61F6;
@@ -222,6 +214,18 @@ a:hover, i:hover, button:hover {
 	margin-left: 50px;
   }
 
+  .videoText h3 {
+	  color: #006484;
+  }
+
+  .videoText a {
+	  color: #006484;
+  }
+
+  .videoText a:hover {
+	  color: #9CCB3B
+  }
+
 
 
 
@@ -231,7 +235,7 @@ a:hover, i:hover, button:hover {
 @media screen and (max-width: 640px) {
 	
 
-	
+
 	.mainLesson {
 		display: grid;
 		vertical-align: middle;
@@ -260,7 +264,7 @@ a:hover, i:hover, button:hover {
 		width: 100%;
 	}
 	
-	.videoText iframe {
+	.videoText img {
 		width: 426px;
 		height: 240px;
 	}
@@ -318,7 +322,7 @@ a:hover, i:hover, button:hover {
 		margin-bottom: 3%;
 	}
 	
-	.videoText iframe {
+	.videoText img {
 		width: 640px; /*updated */
 		height: 360px; /*updated */
 	}
@@ -382,7 +386,7 @@ a:hover, i:hover, button:hover {
 		margin-bottom: 3%;
 	}
 	
-	.videoText iframe {
+	.videoText img {
 		width: 640px; 
 		height: 360px; 
 	}

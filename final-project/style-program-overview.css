@@ -228,7 +228,9 @@ a:hover, i:hover, button:hover {
 /* this targets PHONES */
 @media screen and (max-width: 640px) {
 	
-
+	#myCarousel{
+		display: none;
+	}
 	
 	.mainLesson {
 		display: grid;
